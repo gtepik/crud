@@ -1,0 +1,58 @@
+body {
+    background-image: url('../images/1.jpg'); /* Asegúrate de que la ruta de la imagen sea correcta */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Establece la altura del body al 100% de la ventana */
+    margin: 0; /* Elimina el margen por defecto */
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Color blanco con transparencia */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada para el efecto de flotación */
+    backdrop-filter: blur(10px); /* Fondo difuminado */
+    transition: transform 0.3s; /* Efecto de transición */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de flotación al pasar el mouse */
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0;
+    background-color: rgba(0, 123, 255, 0.8); /* Color azul con transparencia */
+    color: white; /* Color del texto blanco */
+}
+
+.input-group-text {
+    background-color: rgba(0, 123, 255, 0.8); /* Color de fondo azul con transparencia */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+}
+
+.form-control {
+    border-radius: 0 15px 15px 0; /* Bordes redondeados */
+    box-shadow: none; /* Sin sombra */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Color azul */
+    border: none; /* Sin borde */
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color azul oscuro al pasar el mouse */
+}
+
+.btn-secondary {
+    border-radius: 30px; /* Bordes redondeados */
+}
